@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>RiverPix</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<div class="container">
-<%= yield %>
-</div>
-
-</body>
+<html lang="en">
+  <head>
+<!DOCTYPE html>
+<html lang="en">  
+  <head>  
+    <nav class="navbar" style="margin-bottom:2px">
+      <div class="page-header">
+      <h1 align="center"> <%= link_to'River Pix ', posts_path %><small>Share what you love</small></h1>
+      </div>
+    </nav>
+      <title>RiverPix</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <%= csrf_meta_tags %>
+  </head>
+    <body>
+      <div class="container">
+        <%= yield %>
+      </div>
+        <div class="footer">
+          <div class="row">
+            <div class="col-md-4"></div>
+              <div class="col-md-4" style="margin-top: 20px; width: 330px">
+              <br>
+                <li>&copy; All rights reserved.</li>
+                <li>Developer: <a>Salva Pérez</a></li>
+              </div>
+                <div class="col-md-4" style="margin-top: 20px">
+                  <address>
+                    <a href= "http://www.devscola.com"><strong>Devscola</strong></a>
+                    <p>Plaza Mariano Benlliure número 2<br>
+                    Valencia, Spain<br></p>
+                  </address>
+                </div>
+          </div>
+        </div>
+    </body>
 </html>
