@@ -5,6 +5,7 @@ gem 'betterlorem'
 gem 'bootstrap-sass' 
 gem 'bootstrap-will_paginate' 
 gem 'paperclip'
+gem 'devise'
 
 # Bundle edge Racils instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
