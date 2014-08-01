@@ -6,6 +6,7 @@ gem 'bootstrap-sass'
 gem 'bootstrap-will_paginate' 
 gem 'paperclip'
 gem 'devise'
+gem 'rails_12factor'
 
 # Postgre gem
 gem 'pg'
