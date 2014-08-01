@@ -7,9 +7,11 @@ gem 'bootstrap-will_paginate'
 gem 'paperclip'
 gem 'devise'
 gem 'rails_12factor'
+gem 'thin'
 
 # Postgre gem
-gem 'pg'
+gem 'pg', group: :production
+gem 'sqlite3', group: [:development, :test]
 # Bundle edge Racils instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
 # Use SCSS for stylesheets
