@@ -2,15 +2,18 @@
   <h2><%= link_to post.title, post_path(post) %></h2>
  
   <strong>Date: </strong> <small><em><%= post.timestamp %></em></small>
-  <br>
+    <br>
   <strong>Author: </strong> <small><em><%= post.author %></em></small>
-  <br>
-  <br>
+    <br>
+    <br>
   <p><img src="<%= post.avatar.url %>" /></p>
-  <br>
+    <br>
   <p><%= truncate(strip_tags(post.body), length: 600) %></p>
 
-   <p><strong>Number of comments:</strong> <%= post.comments.size %></p>
+  <p><strong>Number of comments:</strong> <%= post.comments.size %></p>
+
+  Quality  : <%= rating_for post, "quality", :enable_half => true %>
+  Originality : <%= rating_for post, "originality", :enable_half => true %>
 
   <hr/>
 </div>

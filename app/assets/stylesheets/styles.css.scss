@@ -52,7 +52,7 @@ hr {
   margin-top: auto;
   margin-left:auto;
   margin-right:auto;
-  text-align: left;
+  text-align: center;
   background-color: #1f242b;
 }
 
@@ -77,4 +77,28 @@ hr {
 .user-log{
   color:white;
   padding-left: 255px;
+}
+
+.login{
+  color:white;
+}
+
+.letter-login{
+  color:white;
+  padding-right: 141px;
+}
+
+.password {
+  color:white;
+  padding-right: 113px; 
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+.remember{
+  color: white;
+  padding-top: 10px;
+  padding-right: 68px;
+  margin-bottom: 0px;
+
 }

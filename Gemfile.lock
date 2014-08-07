@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/wazery/ratyrate.git
-  revision: d36548eca9fe271139d98575487eb20f46b44458
+  revision: 70bc05bb585e50c8e28363e007c01835282c5ad3
   specs:
     ratyrate (1.0.9)
 
@@ -36,7 +36,7 @@ GEM
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     betterlorem (0.1.2)
-    bootstrap-sass (3.2.0.0)
+    bootstrap-sass (3.2.0.1)
       sass (~> 3.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
@@ -71,6 +71,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    letsrate (1.0.9)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -163,6 +164,7 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+  letsrate
   paperclip
   pg
   rails (= 4.1.4)

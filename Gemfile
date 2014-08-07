@@ -9,6 +9,7 @@ gem 'devise'
 gem 'rails_12factor'
 gem 'thin'
 gem 'ratyrate', :github => 'wazery/ratyrate'
+gem 'letsrate'
 
 # Postgre gem
 gem 'pg', group: :production

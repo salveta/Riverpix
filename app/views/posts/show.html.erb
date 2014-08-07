@@ -21,6 +21,9 @@
     <%= @post.body %>
   </p>
 
+  Quality  : <%= rating_for @post, "quality", :enable_half => true %>
+  Originality : <%= rating_for @post, "originality", :enable_half => true %>
+
   <h2>Comments</h2>
   <%= render @post.comments %>
 
