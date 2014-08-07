@@ -1,8 +1,16 @@
 <div>
   <h2><%= link_to post.title, post_path(post) %></h2>
  
-  <small><em><%= post.timestamp %></em></small>
-  <p><img src="<%= post.avatar.url %>" />
+  <strong>Date: </strong> <small><em><%= post.timestamp %></em></small>
+  <br>
+  <strong>Author: </strong> <small><em><%= post.author %></em></small>
+  <br>
+  <br>
+  <p><img src="<%= post.avatar.url %>" /></p>
+  <br>
   <p><%= truncate(strip_tags(post.body), length: 600) %></p>
-  <hr />
+
+   <p><strong>Number of comments:</strong> <%= post.comments.size %></p>
+
+  <hr/>
 </div>

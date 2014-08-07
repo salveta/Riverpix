@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">  
   <head>  
-    <nav class="navbar" style="margin-bottom:2px">
+    <nav class="navbar">
       <div class="page-header">
-      <h1 align="center"> <%= link_to'River Pix ', posts_path %><small>Share what you love</small></h1>
-      <button type="button" class="btn btn-default btn-lg" style="margin-top: 10px"> <%= link_to('Logout', destroy_user_session_path) %>   </button>
+        <h1 align="center"> <%= link_to'River Pix ', posts_path %><small>Share what you love</small></h1>
+        <button style="margin-left:1368px"> <%= link_to('Logout', destroy_user_session_path) %> </button>
+          <div class="user-log">
+            <% if user_signed_in? %>
+              <p><strong>You are loged as:</strong> <%= current_user.email %></p>
+            <% end %>
+          </div>
       </div>
     </nav>
       <title>RiverPix</title>
@@ -15,7 +20,9 @@
   </head>
     <body>
       <div class="container">
-        <%= yield %>
+        <div class="centrar">
+          <%= yield %>
+        </div>
       </div>
         <div class="footer">
           <div class="row">

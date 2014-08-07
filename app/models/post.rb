@@ -3,6 +3,7 @@ class Post < ActiveRecord::Base
   validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
   validates_attachment_size :avatar, :less_than => 1.megabyte
   self.per_page = 10
+  has_many :comments, dependent: :destroy
 
   def timestamp
     created_at.strftime('%d %B %Y %H:%M:%S')

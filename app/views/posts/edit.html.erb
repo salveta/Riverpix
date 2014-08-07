@@ -1,11 +1,12 @@
+<div class='post-view'>
+  <h1 align="center">Editing your post</h1>
 
-<h1 align="center">Editing your post</h1>
+  <%= render 'form' %>
 
-<%= render 'form' %>
-
-<hr />
-<div style=" font-size:22px;"> 
-<%= link_to 'Show post', @post %> |
-<%= link_to 'Back home page', posts_path %>
+  <hr />
+  <div style=" font-size:22px;"> 
+  <%= link_to 'Show post', @post %> |
+  <%= link_to 'Back home page', posts_path %>
+  </div>
 </div>
 
