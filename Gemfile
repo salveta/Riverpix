@@ -9,7 +9,10 @@ gem 'devise'
 gem 'rails_12factor'
 gem 'thin'
 gem 'ratyrate', :github => 'wazery/ratyrate'
-gem 'letsrate'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'
 
 # Postgre gem
 gem 'pg', group: :production
