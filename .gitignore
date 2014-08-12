@@ -16,4 +16,4 @@
 /tmp
 
 # Ignore devise credentials social media.
-/.devise.rb
+/app/config/initializers/devise.rb
