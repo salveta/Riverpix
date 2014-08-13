@@ -6,6 +6,8 @@ class Post < ActiveRecord::Base
   validates_attachment_size :avatar, :less_than => 1.megabyte
   self.per_page = 10
   has_many :comments, dependent: :destroy
+  
+  belongs_to :user
 
   def timestamp
     created_at.strftime('%d %B %Y %H:%M:%S')

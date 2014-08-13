@@ -12,8 +12,10 @@
   </p>
 
   <p>
-    <strong>Author:</strong>
-    <%= @post.author %>
+    <strong>user id:</strong>
+    <%= @post.user_id.class %>
+     <strong>current user id:</strong>
+    <%= current_user.id.class %>
   </p>
 
   <p>
@@ -21,7 +23,7 @@
     <%= @post.body %>
   </p>
 
-  Quality  : <%= rating_for @post, "quality", :enable_half => true %>
+  Quality : <%= rating_for @post, "quality", :enable_half => true %>
   Originality : <%= rating_for @post, "originality", :enable_half => true %>
 
   <h2>Comments</h2>
@@ -31,8 +33,10 @@
   <%= render "comments/form" %>
 
   <div style=" font-size:22px;"> 
-  <%= link_to 'Edit post', edit_post_path(@post) %> |
-  <%= link_to 'Back home page', posts_path %> |
-  <%= link_to 'Destroy post', @posts, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% if current_user.id == @post.user_id %>
+      <%= link_to 'Edit post', edit_post_path(@post) %> |
+      <%= link_to 'Delete post', @posts, method: :delete, data: { confirm: 'Are you sure?' } %> |   
+    <% end %>
+    <%= link_to 'Back', posts_path %> 
   </div>
 </div>
