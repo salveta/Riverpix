@@ -12,10 +12,8 @@
   </p>
 
   <p>
-    <strong>user id:</strong>
-    <%= @post.user_id.class %>
-     <strong>current user id:</strong>
-    <%= current_user.id.class %>
+    <strong>User:</strong>
+    <%= @post.user.email %>
   </p>
 
   <p>
@@ -23,8 +21,12 @@
     <%= @post.body %>
   </p>
 
-  Quality : <%= rating_for @post, "quality", :enable_half => true %>
-  Originality : <%= rating_for @post, "originality", :enable_half => true %>
+    <%= social_share_button_tag(@post.title) %>
+
+  </p>
+    Quality : <%= rating_for @post, "quality", :enable_half => true %>
+    Originality : <%= rating_for @post, "originality", :enable_half => true %>
+
 
   <h2>Comments</h2>
   <%= render @post.comments %>
@@ -33,7 +35,7 @@
   <%= render "comments/form" %>
 
   <div style=" font-size:22px;"> 
-    <% if current_user.id == @post.user_id %>
+    <% if current_user == @post.user %>
       <%= link_to 'Edit post', edit_post_path(@post) %> |
       <%= link_to 'Delete post', @posts, method: :delete, data: { confirm: 'Are you sure?' } %> |   
     <% end %>

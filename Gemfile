@@ -13,6 +13,7 @@ gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
+gem 'social-share-button'
 
 # Postgre gem
 gem 'pg', group: :production

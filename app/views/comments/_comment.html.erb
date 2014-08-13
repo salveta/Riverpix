@@ -1,19 +1,16 @@
 <p>
   <strong>Commenter:</strong>
-  <%= comment.commenter %>
+  <%= comment.user.email %>
 </p>
  
 <p>
   <strong>Comment:</strong>
   <%= comment.commentbody %>
-
-  <%= current_user.id %>
-
-  <%= @post.user_id%>
 </p>
 
+
 <p>
- <% if current_user.id == @post.user_id %>
+ <% if current_user == comment.user  %>
     <%= link_to 'Destroy Comment', [comment.post, comment],
                  method: :delete,
                  data: { confirm: 'Are you sure?' } %>

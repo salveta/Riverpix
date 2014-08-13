@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813123252) do
+ActiveRecord::Schema.define(version: 20140813135748) do
 
   create_table "average_caches", force: true do |t|
     t.integer  "rater_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20140813123252) do
     t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   add_index "comments", ["post_id"], name: "index_comments_on_post_id"
