@@ -3,7 +3,7 @@
  
   <strong>Date: </strong> <small><em><%= post.timestamp %></em></small>
     <br>
-  <strong>Author: </strong> <small><em><%= post.author %></em></small>
+  <strong>Author: </strong> <small><em><%= post.user.email %></em></small>
     <br>
     <br>
   <p><img src="<%= post.avatar.url %>" /></p>
@@ -14,7 +14,7 @@
     <br>
       <%= social_share_button_tag(post.title) %>
     <br>
-  Quality  : <%= rating_for post, "quality", :enable_half => true %>
+  Quality : <%= rating_for post, "quality", :enable_half => true %>
   Originality : <%= rating_for post, "originality", :enable_half => true %>
 
   <hr/>
