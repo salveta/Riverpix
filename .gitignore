@@ -15,6 +15,5 @@
 /log/*.log
 /tmp
 
-# Ignore devise credentials social media.
-/app/config/initializers/devise.rb
+# Ignore devise credentials social media  $ email.
 /*.env

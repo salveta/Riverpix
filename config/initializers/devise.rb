@@ -4,9 +4,9 @@ require 'omniauth-linkedin'
 Devise.setup do |config|
 
 
-  config.omniauth :facebook, "820248137986548", "2294c4d35a5ce7f8fef6ff504ab6e9df"
-  config.omniauth :twitter, "Q3RjS3lA0T4abzlFu0QjTiDmm", "gL0UWo511EJ47wUDCHhgRubSYgVlvEmwsP9KF4q8473y3t7b87"
-  config.omniauth :linkedin, "7797jxl1qs5lnv", "6Vv0kPeeRYkypBom"
+  config.omniauth :facebook, "FACEBOOK_KEY", "FACEBOOK_SECRET_KEY"
+  config.omniauth :twitter, "TWITTER_KEY", "TWITTER_SECRET_KEY"
+  config.omniauth :linkedin, "LINKEDIN_KEY", "LINKEDIN_SECRET_KEY"
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
