@@ -1,6 +1,6 @@
 == README
 
-This is a blog project using some gems in Ruby on Rails.
+This is a blog project using some gems in Ruby on Rails and is connected to s3 amazon to store the pictures.
 
 You can feel free to do click in the next Heroku link and prove yourself the app (http://secret-caverns-5066.herokuapp.com)
 
