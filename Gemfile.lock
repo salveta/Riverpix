@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/wazery/ratyrate.git
-  revision: 70bc05bb585e50c8e28363e007c01835282c5ad3
+  revision: 22fdf05f23fe610a84a6736021608d59607b9080
   specs:
-    ratyrate (1.0.9)
+    ratyrate (1.2.0.alpha)
 
 GEM
   remote: https://rubygems.org/
@@ -53,7 +53,7 @@ GEM
       execjs
     coffee-script-source (1.7.1)
     daemons (1.1.9)
-    devise (3.2.4)
+    devise (3.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 3.2.6, < 5)
@@ -154,9 +154,9 @@ GEM
       sass (~> 3.2.0)
       sprockets (~> 2.8, <= 2.11.0)
       sprockets-rails (~> 2.0)
-    sdoc (0.4.0)
-      json (~> 1.8)
-      rdoc (~> 4.0, < 5.0)
+    sdoc (0.4.1)
+      json (~> 1.7, >= 1.7.7)
+      rdoc (~> 4.0)
     social-share-button (0.1.6)
       coffee-rails
       sass-rails
@@ -183,7 +183,7 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
-    tzinfo (1.2.1)
+    tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.5.3)
       execjs (>= 0.3.0)
