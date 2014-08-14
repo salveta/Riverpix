@@ -14,6 +14,7 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-linkedin'
 gem 'social-share-button'
+gem 'foreman'
 
 # Postgre gem
 gem 'pg', group: :production
