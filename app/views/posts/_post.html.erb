@@ -6,7 +6,7 @@
   <strong>Author: </strong> <small><em><%= post.user.email %></em></small>
     <br>
     <br>
-  <p><img src="<%= post.avatar.url %>" /></p>
+  <p><%= image_tag post.avatar_file_name %></p>
     <br>
   <p><%= truncate(strip_tags(post.body), length: 600) %></p>
 

@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  mount_uploader :avatar_file_name, PostImageUploader
   ratyrate_rateable "quality", "originality"
 
   has_attached_file :avatar, :styles => { :medium => "400x400>", :thumb => "100x100>" }, :default_url => "/assets/avatar_defecto.jpg"
