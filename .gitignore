@@ -17,3 +17,4 @@
 
 # Ignore devise credentials social media.
 /app/config/initializers/devise.rb
+/*.env
